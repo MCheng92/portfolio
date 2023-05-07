@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="./assets/main.js"></script>
+    <title>Porfolio</title>
+</head>
+
+<body>
+
+  <nav>
+    <ul class="navigation">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+<!--====================================== MAIN ========================================-->
+<main>
+
+<!--==================================== WRAPPER =======================================-->
+<div class="wrapper">
+
+  <!--=============================== ABOUT Section ====================================-->
+  <section class="about-section" id="about">
+
+    <div >
+      
+      <div class="about_name">
+        <h1 >Hello, I'm Matthew.</h1>
+      </div>
+
+      <div class="about_bio">
+      <h1 class="about_title">About Me</h1>
+      <p class="about_text">
+        I'm a front end developer. I am currently focused on building things in React but am also looking
+        into other programming languages (i.e Python).
+        
+        Check out my portfolio below to see some of my most recent work.
+      </p>
+    </div>
+
+      <div class="home__social">
+        <a href="https://github.com/mcheng92" target="_blank" class="home__social-icon"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a href="#contact" class="home__social-icon">
+          <i class="bx bx-envelope"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+<!--================================= SKILLS Section ===================================-->
+  <section class="skills_section" id="skills">
+    <div class="container">
+      <h1 class="skills_title">Skills</h1>
+
+      <ul class="skills_list">
+        <li>Languages: HTML, CSS, JavaScript, Python</li>
+        <li>Frameworks: Bootstrap, React, Flask, Django</li>
+        <li>Databases: MySQL, PostgreSQL</li>
+      </ul>
+
+      <ul class="skills_icons">
+        <li class="skills_icon"><i class="bx bxl-javascript"></i></li>
+        <li class="skills_icon"><i class="bx bxl-html5"></i></li>
+        <li class="skills_icon"><i class="bx bxl-css3"></i></li>
+        <li class="skills_icon"><i class='bx bxl-bootstrap'></i></li>
+        <li class="skills_icon"><i class="bx bxl-react"></i></li>
+        <li class="skills_icon"><i class="bx bxl-python"></i></li>
+        <li class="skills_icon"><i class='bx bxl-django' ></i></li>
+        <li class="skills_icon"><i class='bx bxl-postgresql'></i></li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+
+<!--=============================== PROJECTS section ==================================-->
+  <section class="projects-section" id="projects">
+    <div>
+      <h1 class="projects-title">My Projects</h1>
+      
+      <!--==================== REACT PROJECTS  ====================-->
+      <div class="react-projects">
+        
+          <!--==== REACT PROJECTS 1 ====-->
+          <div class="project_container">
+            <div class="project_description">
+              <h3>Spa Site</h3>
+              <p> Simple SPA website in React for a school assignment. Consists of the following elements:</p>
+              <ul >
+                <li> Home Page - Simple home page with nav bar and buttons which redirects the user to the product and appointment pages</li>
+                <li> Packages Page - Displays different types of service with a button count to add and display amount in addition to the total amount</li>
+                <li> Products Page - Similar to the package page with subtotal and total </li>
+                <li> Appointment Page - Simple form layout</li>
+              </ul>
+            
+              <div class="project_button">
+                <button>
+                  <a
+                    href="https://github.com/MCheng92/Spa-Site"
+                    target="_blank"
+                    class="button button--flex button--small portfolio__button2"
+                  >
+                  Code </a>
+                </button>
+              </div>
+
+            </div>
+
+            <div class="image_container">
+              <div class="image_preview">
+                <img src="./assets/img/spa_home.JPG" class="slide">
+                <img src="./assets/img/spa_service.JPG" class="slide">
+              </div>
+            </div>
+        
+        </div>
+
+        <!--==== REACT PROJECTS 2 ====-->
+        <div class="project_container">
+          <div class="project_description">
+            <h3>PokeDex</h3>
+            <p> A Pokedex directory that uses Poke API to display the first 3 generations of pokemon. Each generation of pokemon is displayed seperately on another page </p>
+            <ul >
+              <li> Clickable grid boxes for each pokemon of that generation </li>
+              <li> Displays the pokemon name, type, image, and their base stat values in a table </li>
+            </ul>
+
+            <div class="project_button">
+              <button>
+                <a
+                  href="https://github.com/MCheng92/PokeDex-API"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button2"
+                >
+                Code </a>
+              </button> 
+            </div>
+          </div>
+
+          <div class="image_container">
+            <div class="image_preview">
+              <a href="https://mcheng92.github.io/">
+                <img src="./assets/img/pokedex_home.JPG" class="slide">
+                <img src="./assets/img/pokedex_gen.JPG" class="slide">
+                <img src="./assets/img/pokedex_stat.JPG" class="slide">
+              </a>
+ 
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+        <!--====================== PYTHON PROJECTS =====================-->
+      <div class="python-projects">
+
+        <!--==== PYTHON PROJECTS 1 ==== -->
+        <div class="project_container">
+          <div class="project_description">
+            <h3>Movie list/wiki</h3>
+            <p> Basic application in Python that creates a database for movies and characters/actors  </p>
+            <ul >
+              <li> Uses PostgreSQL (pgAdmin 4) and Django to create and link the database</li>
+              <li> Basic CRUD functionality to allow user to add/edit/delete both movies and characters </li>
+            </ul>
+
+          <div class="project_button">
+            <button>
+              <a
+                href="https://github.com/MCheng92/Movie-List"
+                target="_blank"
+                class="button button--flex button--small portfolio__button2"
+              >
+              Code </a>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="image_container">
+          <div class="image_preview">
+            <img src="./assets/img/movie_home.JPG" class="slide">
+            <img src="./assets/img/movie_edit.JPG" class="slide">
+            <img src="./assets/img/movie_casts.JPG" class="slide">    
+          </div>
+        </div>
+
+        </div>
+      </div>
+      
+    </div>
+
+    </div>
+  </section>
+
+  <!--============================         CONTACT Section        ==================================-->
+  <section class="contact-section" id="contact">
+    <div class="contact_row">
+
+  <!-- CONTACT Form - Left -->
+      <div class="contact_left">
+        <h2 class="contact_left_title">Contact Me</h2>
+        <p><i class="bx bx-envelope"></i>matthew.cheng92@gmail.com</p>
+      </div>
+
+  <!-- CONTACT Form - Right -->
+      <div class="contact_right">
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="mailto:matthew.cheng92@gmail.com" method="POST">
+    
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter Your Name"
+                  class="input-field"
+                  required
+                />
+              </div>
+              
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter Your Email"
+                  class="input-field"
+                  required
+                />
+              </div>
+    
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  cols="60"
+                  rows="7"
+                  placeholder="Leave A Message"
+                  name="message"
+                  class="input-field"
+                  required
+                ></textarea>
+              </div>
+    
+              <input
+                type="submit"
+                value="Submit"
+                id="submit-btn"
+                class="submit-btn"
+              />
+    
+            </form>
+          </div>
+        </div>
+    </div>
+  </div>
+
+    
+  </section>
+</main>
+
+</body>
+</html>
